@@ -5,7 +5,7 @@
 
 //  * save the data
   const products = [{
-    image: '/product-images/cooker.jpg',
+    image: './product-images/cooker.jpg',
     name: 'Electric cooker',
     priceCents: 200,
     stars:[
@@ -15,7 +15,7 @@
         }
     ]
   },{
-    image: '/product-images/electric-heater.jpg',
+    image: './product-images/electric-heater.jpg',
     name: 'Electric-heater',
     priceCents: 80,
     stars:[{
@@ -23,7 +23,7 @@
         count: 15
     }]
   },{
-    image: '/product-images/electric-toaster.jpg',
+    image: './product-images/electric-toaster.jpg',
     name: 'Electric portable toaster',
     priceCents: 50,
     stars:[{
@@ -31,7 +31,7 @@
         count: 20
     }]
   },{
-    image: '/product-images/family-size-fridge.jpg',
+    image: './product-images/family-size-fridge.jpg',
     name: 'Family size fridge',
     priceCents: 150,
     stars:[{
@@ -39,7 +39,7 @@
         count: 12
     }]
   },{
-    image: '/product-images/macbook-air.jpg',
+    image: './product-images/macbook-air.jpg',
     name: 'Macbook AIR',
     priceCents:1000,
     stars:[{
@@ -47,7 +47,7 @@
         count: 8
     }]
   },{
-    image: '/product-images/tv.jpg',
+    image: './product-images/tv.jpg',
     name: 'Hisense LCD',
     priceCents: 250,
     stars:[{
@@ -55,7 +55,7 @@
         count: 15
     }]
   },{
-    image: '/product-images/washing-machine.jpg',
+    image: './product-images/washing-machine.jpg',
     name: 'Portable washing maching',
     priceCents:150,
     stars:[{
@@ -63,7 +63,7 @@
         count: 50
     }]
   },{
-    image: '/product-images/vacum-cleaner.jpg',
+    image: './product-images/vacum-cleaner.jpg',
     name: 'Electric Vacum tube',
     priceCents: 300,
     stars:[{
