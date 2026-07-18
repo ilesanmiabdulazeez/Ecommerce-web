@@ -31,15 +31,15 @@
         count: 20
     }]
   },{
-    image: '/product-images/family-size-freeter.jpg',
-    name: 'Family size freezer',
+    image: '/product-images/family-size-fridge.jpg',
+    name: 'Family size fridge',
     priceCents: 150,
     stars:[{
         rating: 3,
         count: 12
     }]
   },{
-    image: '/product-images/Macbook Air.jpg',
+    image: '/product-images/macbook-air.jpg',
     name: 'Macbook AIR',
     priceCents:1000,
     stars:[{
@@ -47,7 +47,7 @@
         count: 8
     }]
   },{
-    image: '/product-images/T.V.jpg',
+    image: '/product-images/tv.jpg',
     name: 'Hisense LCD',
     priceCents: 250,
     stars:[{
@@ -55,7 +55,7 @@
         count: 15
     }]
   },{
-    image: '/product-images/washing maching.jpg',
+    image: '/product-images/washing-machine.jpg',
     name: 'Portable washing maching',
     priceCents:150,
     stars:[{
