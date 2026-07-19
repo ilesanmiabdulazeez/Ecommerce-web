@@ -1,12 +1,6 @@
-// * the main idea of javascript is
-//save the data
-// generate the html
-// make it interactive
+import{cart} from "./scripts/cart.js"
+import { products } from "./scripts/data/products";
 
-//  * save the data
-
-
-    //* generate the html
     let productHtml = "";
     products.forEach((product)=>{
      productHtml +=  `
