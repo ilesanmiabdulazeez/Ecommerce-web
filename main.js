@@ -125,18 +125,22 @@
 
     document.querySelectorAll('.js-cart-btn').forEach((button)=>{
         button.addEventListener('click', ()=>{
-            console.log(button.dataset.productName);
+            const productData = button.dataset.productName;
+            let matchingItem;
+            cart.forEach((cartItem)=>{
+                if(cartItem.productName === productName){
+                    matchingItem = cart.productName
+                }
+            });
+
+            if(matchingItem){
+                matchingItem.quantity += 1
+            }else{
+                cart.push({
+                    productName: productName,
+                    quantity: 1
+                })
+            }
+
         });
     });
-    // const cart = [];
-// let matchingItem;
-// cart.forEach((cartItem)=>{
-//   if(cartItem.productName === productName){
-//     matching}
-//   });
-//    if(matchingItem){
-//    matchingItem.quantity += 1 ;   
-//   }else{
-//    cart.push({
-//    productName: productName,     
-//   quantity: quantity}) }
