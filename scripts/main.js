@@ -1,7 +1,6 @@
-import{cart} from '../data/cart.js';
+import{cart,addToCart} from '../data/cart.js';
 import { products } from '../data/products.js';
 
-    
     let productHtml = "";
     products.forEach((product)=>{
      productHtml +=  `
@@ -52,28 +51,11 @@ import { products } from '../data/products.js';
     // get the dataset from the button 
     // loop through each of the button by adding a forloop & eventlister
 
-    function addToCart(productId){
-            let matchingItem;
-            cart.forEach((item)=>{
-                if(productId === item.productId){
-                    matchingItem = item;
-                }
-            });
-            
-            
-            if(matchingItem){
-                matchingItem.quantity += 1
-            }else{
-                cart.push({
-                    productId: productId,
-                    quantity: 1
-                })
-            }
-    }
+    
     document.querySelectorAll('.js-cart-btn').forEach((button)=>{
         button.addEventListener('click', ()=>{
             const productId = button.dataset.productId;
             addToCart(productId);
-
+            console.log(cart);
         });
     });
