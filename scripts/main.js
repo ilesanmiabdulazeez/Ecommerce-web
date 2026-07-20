@@ -53,14 +53,15 @@ import { products } from '../data/products.js';
 
     document.querySelectorAll('.js-cart-btn').forEach((button)=>{
         button.addEventListener('click', ()=>{
-            const productData = button.dataset.productId;
+            const productId = button.dataset.productId;
             let matchingItem;
-            cart.forEach((cartItem)=>{
-                if(cartItem.productId === productId){
-                    matchingItem = cart.productId
+            cart.forEach((item)=>{
+                if(productId === item.productId){
+                    matchingItem = item;
                 }
             });
-
+            console.log(cart);
+            
             if(matchingItem){
                 matchingItem.quantity += 1
             }else{
