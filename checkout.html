@@ -5,7 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    .product-img img{
+        width: 200px;
+    }
+    .checkout-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 5px;
+        
+    }
+    .item{
+        border: 1px solid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        border-radius:10px ;
+        display: flex;
+    }
+
+    .cart-summary{
+        border: 1px solid;
+        width: 400px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+
+    .cart-summary h2{
+        text-align: center;
+    }
+    .info{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .order-total{
+        margin-left: 10px;
+    }
+
+    .order-btn{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        padding: 10px 10px;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
     
+</style>
+<body>
+    <div class="checkout-container">
+        <div class="item">
+        <div class="product-img">
+            <img src="./product-images/cooker.jpg" alt="">
+        </div>
+        <div class="product-content">
+            <h3>
+                Black electric cooker
+            </h3>
+            <p class="product-price">
+                $100.00
+            </p>
+            <p class="product-quantity">
+                Quantity 2
+            </p>
+            <span class="product-update">
+                Update
+            </span>
+            <span class="product-delete">
+                Delete
+            </span>
+        </div>
+
+        <div class="radio-container">
+            <h3>
+                Choose a delivery option:
+            </h3>
+            <div class="radio-input">
+                <input type="radio">
+                <label>
+                    Tuesday, june 21
+                    FREE Shipping
+                </label>
+            </div>
+            <div class="radio-input">
+                <input type="radio">
+                <label>
+                    Wednesday, june 15
+                    $7.99
+                </label>
+            </div>
+            <div class="radio-input">
+                <input type="radio">
+                <label>
+                    Monday, June 13
+                    $10.00 - Shipping
+                </label>
+            </div>
+        </div>
+
+            </div>
+
+            <div class="item">
+        <div class="product-img">
+            <img src="./product-images/cooker.jpg" alt="">
+        </div>
+        <div class="product-content">
+            <h3>
+                Black electric cooker
+            </h3>
+            <p class="product-price">
+                $100.00
+            </p>
+            <p class="product-quantity">
+                Quantity 2
+            </p>
+            <span class="product-update">
+                Update
+            </span>
+            <span class="product-delete">
+                Delete
+            </span>
+        </div>
+
+        <div class="radio-container">
+            <h3>
+                Choose a delivery option:
+            </h3>
+            <div class="radio-input">
+                <input type="radio">
+                <label>
+                    Tuesday, june 21
+                    FREE Shipping
+                </label>
+            </div>
+            <div class="radio-input">
+                <input type="radio">
+                <label>
+                    Wednesday, june 15
+                    $7.99
+                </label>
+            </div>
+            <div class="radio-input">
+                <input type="radio">
+                <label>
+                    Monday, June 13
+                    $10.00 - Shipping
+                </label>
+            </div>
+        </div>
+
+            </div>
+            <div class="item">
+            <div class="cart-summary">
+                <h2>
+                    Order Summary
+                </h2>
+                    <div class="info">
+                        <p>items(3):        $100.00</p>
+                    </div>
+                    <div class="info">
+                        <p>Shipping & handling     $4.99</p>
+                        
+                    </div>
+                    <hr>
+                    <div class="info">
+                        <p>
+                            Total before tax:   $47.74
+                        </p>
+                        <p>
+                            Estimated  tax(10%):    $4.77
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="order-total">
+                        <span>Order total:          $52.51</span>
+                    </div>
+                    <button class="order-btn">
+                        Place your order
+                    </button>
+            </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
 </body>
 </html>
